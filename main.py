@@ -6,8 +6,8 @@
 def read_file_content(filename):
     # [assignment] Add your code here
 
-    file = open(filename)
-    file_content = file.read()
+    with open(filename) as file:
+        file_content = file.read()
 
     return file_content
 
